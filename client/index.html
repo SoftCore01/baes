@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAES RECEIPT FORM</title>
+    <script type="module" crossorigin src="/assets/main-rj3XTClI.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/output-CXwjMTNO.js">
+    <link rel="stylesheet" crossorigin href="/assets/output-DKUvG7wv.css">
+  </head>
+  <body class="p-4 min-h-screen flex justify-center items-center">
+    <form class="flex flex-col gap-5" enctype="multipart/form-data">
+      <div class="flex flex-col">
+        <label for="fullName">Full Name</label>
+        <input
+          class="border-2 rounded-lg px-2"
+          type="text"
+          name="fullName"
+          id="fullName"
+          placeholder="John Doe"
+        />
+      </div>
+      <div class="flex flex-col">
+        <label for="matricNo">Matric Number</label>
+        <input
+          class="border-2 rounded-lg px-2"
+          type="text"
+          name="matricNo"
+          id="matricNo"
+          placeholder="BU25MCT2001"
+        />
+      </div>
+
+      <div class="w-full">
+        <label for="level"></label>
+        <select class="border-2 rounded-lg w-full" name="level" id="level">
+          <option value="">Level</option>
+          <option value="100">100</option>
+          <option value="100">200</option>
+          <option value="100">300</option>
+          <option value="100">400</option>
+          <option value="100">500</option>
+        </select>
+      </div>
+
+      <div class="flex flex-col">
+        <label for="email">Email</label>
+        <input
+          class="border-2 rounded-lg px-2"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Johndoe@gmail.com"
+        />
+      </div>
+
+      <div>
+        <label for="department"></label>
+        <select
+          class="border-2 rounded-lg w-full"
+          name="department"
+          id="department"
+        >
+          <option value="">department</option>
+          <option value="EEE">Electrical and Electronics Engineering</option>
+          <option value="MCT">Mechatronics Engineering</option>
+        </select>
+      </div>
+
+      <div class="flex flex-col">
+        <label for="phoneNo">Phone Number</label>
+        <input
+          class="border-2 rounded-lg px-2"
+          type="number"
+          name="phoneNo"
+          id="phoneNo"
+          placeholder="08123456789"
+        />
+      </div>
+
+      <div class="flex flex-col">
+        <label for="payerName">Name of Account Used for Payment</label>
+        <input
+          class="border-2 rounded-lg px-2"
+          type="text"
+          name="payerName"
+          id="payerName"
+          placeholder="Jessica Doe"
+        />
+      </div>
+
+      <div class="flex flex-col">
+        <label for="receipt"></label>
+        <input
+          class="border-2 rounded-lg px-2"
+          type="file"
+          name="file"
+          id="file"
+          class="bg-grey"
+        />
+      </div>
+
+      <div class="font-bold">
+        <p id="messageParagragh"></p>
+      </div>
+
+      <button
+        type="submit"
+        class="bg-blue-300 font-semibold rounded-lg cursor-pointer"
+      >
+        Submit
+      </button>
+    </form>
+
+    <!-- <form id="second-form">
+      <input type="file" name="file" id="file">
+      <button type="submit" class="bg-black">Submit</button>
+      <script>
+        let secondForm = document.querySelector("#second-form");
+        secondForm.addEventListener("submit", async function (event) {
+          event.preventDefault();
+          const fakeForm = new FormData()
+          fakeForm.set("file", new FormData(secondForm).get("file"))
+          
+          console.log(new FormData(secondForm).get("file"))
+          await fetch("/upload", {
+            method: "POST",
+            body: fakeForm
+          })
+        })
+      </script>
+    </form> -->
+  </body>
+</html>

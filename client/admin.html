@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sortable Student Table</title>
+  <script type="module" crossorigin src="/assets/admin-3aIWJlRW.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/output-CXwjMTNO.js">
+  <link rel="stylesheet" crossorigin href="/assets/output-DKUvG7wv.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+  <div class="w-full max-w-6xl bg-white shadow-lg rounded-2xl overflow-hidden">
+    <h1 class="text-2xl font-semibold text-center py-4 bg-gray-800 text-white">Student Records</h1>
+
+    <div class="overflow-x-auto">
+      <table class="min-w-full text-sm text-left text-gray-700" id="studentTable">
+        <thead class="bg-gray-200 text-gray-800">
+          <tr>
+            <th class="px-4 py-3 cursor-pointer select-none" data-column="fullName">Full Name ⬍</th>
+            <th class="px-4 py-3 cursor-pointer select-none" data-column="matricNo">Matric No ⬍</th>
+            <th class="px-4 py-3 cursor-pointer select-none" data-column="level">Level ⬍</th>
+            <th class="px-4 py-3 cursor-pointer select-none" data-column="level">Department ⬍</th>
+            <th class="px-4 py-3">Email</th>
+            <th class="px-4 py-3">Phone Number</th>
+            <th class="px-4 py-3">Receipt Link</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody" class="divide-y divide-gray-100">
+          <!-- Rows populated by script -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>

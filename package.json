@@ -1,0 +1,31 @@
+{
+  "name": "receipt_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "node --watch --trace-warnings --env-file=.env ndex.js",
+    "start": "node --env-file=.env index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.14",
+    "chalk": "^5.6.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "megajs": "^1.3.9",
+    "multer": "^2.0.2",
+    "redis": "^5.8.3",
+    "sqlite3": "^5.1.7",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.8.1"
+  }
+}
